@@ -1,0 +1,237 @@
+header {
+background:#a78686;
+}
+
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapp {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+
+
+.main-nav {
+  width: 100%;
+  padding: 34px 0px;
+}
+
+.main-nav .main-nav-list {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav .main-nav-list > li {
+  position: relative;
+}
+
+.main-nav .main-nav-list > li > a:not(.logo) {
+  padding: 12px 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #fff;
+}
+
+.main-nav .main-nav-list > li:not(.logo-item):hover {
+  background: #343434;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.main-nav .main-nav-list > li:not(.logo-item):hover > a {
+  color: #ff7200;
+}
+
+.main-nav .main-nav-list > li:hover .sub-menu-wrapp {
+  display: block;
+}
+
+.main-nav a:not(.logo) {
+  display: block;
+  text-transform: uppercase;
+  font: 600 14px 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.main-nav .logo {
+  display: block;
+  width: 171px;
+  height: 72px;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  margin: 0 19px;
+  background: red;
+}
+
+.main-nav .sub-menu-wrapp {
+  display: none;
+  position: absolute;
+  width: 253px;
+  padding-top: 14px;
+  left: 0px;
+  z-index: 3;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu {
+  width: 100%;
+  padding: 20px 0;
+  background: #343434;
+  list-style: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu li {
+  position: relative;
+  padding: 10px 15px 10px 19px;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu li::before {
+  content: "•";
+  color: #fff;
+  position: absolute;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu li:last-child {
+  margin-bottom: 0px;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu li:hover {
+  cursor: pointer;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu a {
+  padding: 0;
+  line-height: 1;
+  padding: 0 0 0 14px;
+  color: #bbbbbb;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu a:hover, .main-nav .sub-menu-wrapp .sub-menu a:active, .main-nav .sub-menu-wrapp .sub-menu a:focus {
+  color: #fff;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu .sub-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: -20px;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu li:nth-child(5)::after {
+  display: inline-block;
+  content: '>';
+  font: 400 15px 'Open Sans', sans-serif;
+  color: #bbbb;
+  position: absolute;
+  top: 23%;
+  right: 12px;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu li:hover > .sub-menu {
+  display: block;
+}
+
+.main-nav .sub-menu-wrapp .sub-menu li:nth-child(5):hover::after {
+  color: #fff;
+}
+
+header, section {
+	width: 100%;
+	height: 600px;
+}
+
+
+.main-nav-fixed-wrapp {
+  position: fixed;
+  display: block;
+  visibility: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/nav_border.png) repeat-x top center, #ffffff;
+  -webkit-box-shadow: 1px 0 4px #a4a4a4;
+          box-shadow: 1px 0 4px #a4a4a4;
+  z-index: 100;
+}
+
+.main-nav-fixed-wrapp .main-nav {
+  padding: 11px 0;
+}
+
+.main-nav-fixed-wrapp .main-nav .sub-menu-wrapp {
+  padding-top: 25px;
+}
+
+.main-nav-fixed-wrapp .main-nav .main-nav-list > li > a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #343434;
+}
+
+.main-nav-fixed-wrapp .main-nav .logo {
+  background: red;
+}
+
+
+
+
+
+.section-1 { background: #111;}
+.section-2{ background: #231;}
+.section-3{ background: #555;}
+.section-4{ background: #444;}
+.section-5{ background: #333;}
+.section-6{ background: #222;}
+.section-7{ background: #111;}
