@@ -1,8 +1,18 @@
 'use strict';
 
 function ScrollToElement() {
-    this._navigation = [];
+    this._navigation = {
+        nav: '',
+        config: [
+            {
+                link:'',
+                target: ''
+            },
+        ]
+    };
 }
+
+
 ScrollToElement.prototype = {
     setListeners: function(initInfo) {
         this._navigation = initInfo;
